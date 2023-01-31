@@ -18,7 +18,7 @@ jobs:
     - name: Draw with keymap-drawer
       run: | 
         python3 -m pip install keymap-drawer
-        keymap parse ${GITHUB_WORKSPACE}/config/${{ matrix.keymap }}.keymap | keymap draw ${{ matrix.layout_args }} - >${{ matrix.keymap }}.svg
+        keymap parse -z ${GITHUB_WORKSPACE}/config/${{ matrix.keymap }}.keymap | keymap draw ${{ matrix.layout_args }} - >${{ matrix.keymap }}.svg
     - name: Upload SVGs
       uses: actions/upload-artifact@v3
       with:
