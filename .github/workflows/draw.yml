@@ -1,0 +1,26 @@
+name: Draw keymap
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  draw:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - keymap: swweeep
+            layout_args: >-
+              -o '{split: true, rows: 3, columns: 5, thumbs: 3}'
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3      
+    - name: Draw with keymap-drawer
+      run: | 
+        python3 -m pip install keymap-drawer
+        keymap -c ${GITHUB_WORKSPACE}/keymap_config.yaml parse -z ${GITHUB_WORKSPACE}/config/${{ matrix.keymap }}.keymap | keymap -c ${GITHUB_WORKSPACE}/keymap_config.yaml draw ${{ matrix.layout_args }} - >${{ matrix.keymap }}.svg
+    - name: Upload SVGs
+      uses: actions/upload-artifact@v3
+      with:
+        name: keymap_svgs
+        path: '*.svg'
+        retention-days: 7

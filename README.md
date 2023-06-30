@@ -10,10 +10,10 @@ It mainly uses three non-base layers activated through two thumb keys, along wit
 `FUN` layer is implemented as a tri-layer, i.e. it is active when both `NAV` and `SYM` are active.
 
 OS-dependent shortcuts are present on the `NAV` layer, e.g. for Windows:
-- `Win Close`: <kbd>Alt</kbd><kbd>F4</kbdy>
+- `Tab New`: <kbd>Ctrl</kbd><kbd>T</kbdy>
 - `Tab Next`: <kbd>Ctrl</kbd><kbd>Tab</kbd>
 - `Tab Prev`: <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>Tab</kbd>
-- `Tab Close`: <kbd>Ctrl</kbd><kbd>F4</kbd>
+- `Tab Close`: <kbd>Ctrl</kbd><kbd>W</kbd>
 - `Desk Next`: <kbd>Ctrl</kbd><kbd>Gui</kbd><kbd>Right</kbd>
 - `Desk Prev`: <kbd>Ctrl</kbd><kbd>Gui</kbd><kbd>Left</kbd>
 - `Win Next`: <kbd>Alt</kbd><kbd>Tab</kbd> (hold Alt while layer active) using zmkfirmware/zmk#1366
