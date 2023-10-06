@@ -1,0 +1,85 @@
+draw_config:
+    arc_radius: 6.0
+    arc_scale: 1.0
+    combo_h: 20.0
+    combo_w: 20.0
+    inner_pad_h: 2.0
+    inner_pad_w: 2.0
+    key_h: 56.0
+    key_rx: 6.0
+    key_ry: 6.0
+    key_w: 60.0
+    line_spacing: 18.0
+    outer_pad_h: 85.0
+    outer_pad_w: 30.0
+    split_gap: 35.0
+    svg_style: |
+        /* font and background color specifications */
+        svg {
+            font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+            font-size: 14px;
+            font-kerning: normal;
+            text-rendering: optimizeLegibility;
+            fill: #24292e;
+        }
+
+        /* default key styling */
+        rect {
+            fill: #f6f8fa;
+            stroke: #d6d8da;
+            stroke-width: 1;
+        }
+
+        /* color accent for held keys */
+        .held {
+            fill: #fdd;
+        }
+
+        /* color accent for combo boxes */
+        .combo {
+            fill: #ccddffaa;
+        }
+
+        /* color accent for ghost (optional) keys */
+        .ghost {
+            fill: #ddd;
+        }
+
+        text {
+            text-anchor: middle;
+            dominant-baseline: middle;
+        }
+
+        /* styling for layer labels */
+        .label {
+            font-weight: bold;
+            text-anchor: start;
+            stroke: white;
+            stroke-width: 2;
+            paint-order: stroke;
+        }
+
+        /* styling for combo box and hold-tap hold label text */
+        .small {
+            font-size: 11px;
+            fill: #444;
+        }
+
+        /* styling for hold-tap hold label text in combo box */
+        .smaller {
+            font-size: 8px;
+        }
+
+        /* styling for combo dendrons */
+        path {
+            stroke-width: 1;
+            stroke: gray;
+            fill: none;
+        }
+parse_config:
+    preprocess: true
+    raw_binding_map: 
+        "&bootloader": "Boot"
+        "&reset": "Reset"
+        "&caps_word": "Caps Word"
+    skip_binding_parsing: false

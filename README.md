@@ -15,10 +15,10 @@ It mainly uses three non-base layers activated through two thumb keys, along wit
 The default alpha layer is a modification of Colemak-DH and an alternative is the [Bird layout](https://github.com/jcmkk3/bird-layout) by @jcmkk3.
 
 OS-dependent shortcuts are present on the `NAV` layer, e.g. for Windows:
-- `Win Close`: <kbd>Alt</kbd><kbd>F4</kbdy>
+- `Tab New`: <kbd>Ctrl</kbd><kbd>T</kbdy>
 - `Tab Next`: <kbd>Ctrl</kbd><kbd>Tab</kbd>
 - `Tab Prev`: <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>Tab</kbd>
-- `Tab Close`: <kbd>Ctrl</kbd><kbd>F4</kbd>
+- `Tab Close`: <kbd>Ctrl</kbd><kbd>W</kbd>
 - `Desk Next`: <kbd>Ctrl</kbd><kbd>Gui</kbd><kbd>Right</kbd>
 - `Desk Prev`: <kbd>Ctrl</kbd><kbd>Gui</kbd><kbd>Left</kbd>
 - `Win Next`: <kbd>Alt</kbd><kbd>Tab</kbd> (hold Alt while layer active) using zmkfirmware/zmk#1366
@@ -26,7 +26,7 @@ OS-dependent shortcuts are present on the `NAV` layer, e.g. for Windows:
 
 Below representation was generated with [`keymap-drawer`](https://github.com/caksoylar/keymap-drawer) -- check out the automatically generated layouts using the [automated Github workflow](https://github.com/caksoylar/keymap-drawer/tree/main#setting-up-an-automated-drawing-workflow) for each keyboard in the [`keymap-drawer` folder](keymap-drawer/), which is always up to date with the config.
 
-![Keymap Representation](./keymap-drawer/corneish_zen.svg?raw=true "Keymap Representation")
+![Keymap Representation](./keymap-drawer/swweeep.svg?raw=true "Keymap Representation")
 
 See my [QMK userspace](https://github.com/caksoylar/qmk_userspace/) for equivalent keymap definitions for QMK.
 
