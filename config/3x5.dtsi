@@ -79,13 +79,13 @@
     };
 
     keymap {
-        LAYER(Colemak,
+        LAYER(Qwerty,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp Q         &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y         &kp SQT
+     &kp Q         &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I         &kp O         &kp P
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &hml LCTRL A  &hml LGUI R   &hml LALT S   &hml LSHFT T  &hmt MCL G         &hmt MCR M    &hmr RSHFT N  &hmr RALT E   &hmr RGUI I   &hmr RCTRL O
+     &hml LCTRL A  &hml LGUI S   &hml LALT D   &hml LSHFT F  &hmt MCL G         &hmt MCR H    &hmr RSHFT J  &hmr RALT K   &hmr RGUI L   &hmr RCTRL COLON
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &kp COMMA     &kp DOT       &kp SLASH
+     &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M        &kp COMMA     &kp DOT       &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                  &mt LGUI ESC  &mt LCTRL RET &ltr NAV SPACE    &ltl SYM BSPC &mt RSHFT TAB &mt RALT DEL
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
