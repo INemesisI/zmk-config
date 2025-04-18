@@ -130,9 +130,9 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp GRAVE     &kp EXCL      &kp AT        &kp HASH      &kp DLLR          &kp PRCNT     &kp CARET     &kp AMPS      &kp ASTRK     &kp TILDE
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &hml LCTRL LBKT &hml LGUI LPAR &hml LALT LBRC &hml LSHFT LT &kp SEMI      &kp COLON     &hmr RSHFT GT &hmr RALT RBRC &hmr RGUI RPAR &hmr RCTRL RBKT
+     &hml LCTRL LBKT &hml LGUI LPAR &hml LALT LBRC &hml LSHFT LT &kp COLON     &kp SEMI      &hmr RSHFT GT &hmr RALT RBRC &hmr RGUI RPAR &hmr RCTRL RBKT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp SLASH     &kp SQT       &kp BSLH      &kp EQUAL    &kp MINUS         &kp UNDER     &kp PLUS      &kp PIPE      &kp DQT        &kp QMARK
+     &kp QMARK     &kp DQT       &kp PIPE      &kp PLUS     &kp UNDER         &kp MINUS     &kp EQUAL     &kp BSLH      &kp SQT        &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                  &mt LGUI ESC  &mt LCTRL RET &trans            &trans        &mt RSHFT TAB &mt RALT DEL
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
