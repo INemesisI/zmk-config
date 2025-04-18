@@ -9,11 +9,20 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
 	default y
 
+config ZMK_USB
+	default y
+
+config ZMK_STUDIO
+	default y
+
 endif
 
-if SHIELD_SWWEEEP_LEFT || SHIELD_SWWEEEP_RIGHT
+if SHIELD_SWWEEEP_LEFT || SHIELD_SWWEEEP_RIGHT || SHIELD_SWWEEEP_DONGLE
 
 config ZMK_SPLIT
+	default y
+
+config ZMK_BLE
 	default y
 
 endif
