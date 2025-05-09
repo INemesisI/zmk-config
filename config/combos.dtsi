@@ -52,7 +52,7 @@
         // COMBO(tilde,  &kp TILDE,    20 21, FAST)
         // COMBO(under,  &kp UNDER,    21 22, FAST)
         // COMBO(minus,  &kp MINUS,    22 23, FAST)
-        COMBO(grave,  &kp GRAVE,    23 24, FAST)
+        // COMBO(grave,  &kp GRAVE,    23 24, FAST)
         // // ? squeezes between upper left and right
         // COMBO(at,  &kp AT,          24 25, SLOW)
         // // BottomRow Right: |+=\
@@ -62,8 +62,8 @@
         // COMBO(bslh,   &kp BSLH,     28 29, FAST)
         
         // alt-tab support
-        COMBO(tab,    &kp TAB,      11 13, FAST)
+        // COMBO(tab,    &kp TAB,      11 13, FAST)
         
-        COMBO(capswd, &caps_word,   13 16, SLOW)
+        // COMBO(capswd, &caps_word,   13 16, SLOW)
     };
 };
