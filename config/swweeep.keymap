@@ -127,7 +127,7 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp GRAVE     &kp EXCL      &kp AT        &kp HASH      &kp DLLR          &kp PRCNT     &kp CARET     &kp AMPS      &kp ASTRK     &kp QMARK
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &hml LCTRL COLON &hml LGUI LBKT &hml LALT LPAR &hml LSHIFT LBRC &kp LT    &kp GT        &hmr RSHFT RBRC &hmr RALT RPAR &hmr RGUI RBKT &hmr RCTRL SEMI
+     &hml LCTRL LBKT  &hml LGUI RBKT &hml LALT LPAR &hml LSHIFT RPAR &kp LT    &kp GT   &hmr RSHFT LBRC &hmr RALT RBRC &hmr RGUI COLON &hmr RCTRL SEMI
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp TILDE     &kp DQT       &kp SQT       &kp PLUS      &kp MINUS         &kp UNDER      &kp EQUAL     &kp PIPE     &kp BSLH       &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
@@ -162,7 +162,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp F6        &kp F7        &kp F8        &kp F9        &kp F10           &kp CAPS      &kp LSHIFT    &kp LALT      &kp LGUI      &kp LCTRL
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &trans        &trans        &trans        &kp F11       &kp F12           &out OUT_USB  &out OUT_BLE  &kp PSCRN    &kp PAUSE_BREAK &bt BT_CLR
+     &caps_word    &trans        &trans        &kp F11       &kp F12           &out OUT_USB  &out OUT_BLE  &kp PSCRN    &kp PAUSE_BREAK &bt BT_CLR
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                   &trans        &kp LCTRL      &trans            &trans        &kp RSHIFT     &trans
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
