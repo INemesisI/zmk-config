@@ -44,6 +44,7 @@
                display-name = "HM Left";
                #binding-cells = <2>;
                flavor = "balanced";
+               require-prior-idle-ms = <150>;
                tapping-term-ms = <200>;
                quick-tap-ms = <150>;
                bindings = <&kp>, <&kp>;
@@ -55,6 +56,7 @@
                display-name = "HM Right";
                #binding-cells = <2>;
                flavor = "balanced";
+               require-prior-idle-ms = <150>;
                tapping-term-ms = <200>;
                quick-tap-ms = <150>;
                bindings = <&kp>, <&kp>;
@@ -66,6 +68,7 @@
                display-name = "HM Toggle";
                #binding-cells = <2>;
                flavor = "balanced";
+               require-prior-idle-ms = <150>;
                tapping-term-ms = <200>;
                quick-tap-ms = <150>;
                bindings = <&mo>, <&kp>;
@@ -76,23 +79,17 @@
                compatible = "zmk,behavior-hold-tap";
                display-name = "LT Right";
                #binding-cells = <2>;
-               flavor = "balanced";
+               flavor = "hold-preferred";
                tapping-term-ms = <200>;
-               quick-tap-ms = <150>;
                bindings = <&mo>, <&kp>;
-               hold-trigger-key-positions = <KEYS_L KEYS_R>;
-               hold-trigger-on-release;
           };
           ltl: layer_toggle_left {
                compatible = "zmk,behavior-hold-tap";
                display-name = "LT Left";
                #binding-cells = <2>;
-               flavor = "balanced";
+               flavor = "hold-preferred";
                tapping-term-ms = <200>;
-               quick-tap-ms = <150>;
                bindings = <&mo>, <&kp>;
-               hold-trigger-key-positions = <KEYS_L KEYS_R>;
-               hold-trigger-on-release;
           };
     };
 
@@ -128,11 +125,11 @@
           bindings = <
 
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp GRAVE     &kp EXCL      &kp AT        &kp HASH      &kp DLLR          &kp PRCNT     &kp CARET     &kp AMPS      &kp ASTRK     &kp TILDE
+     &kp GRAVE     &kp EXCL      &kp AT        &kp HASH      &kp DLLR          &kp PRCNT     &kp CARET     &kp AMPS      &kp ASTRK     &kp QMARK
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &hml LCTRL LBKT &hml LGUI LPAR &hml LALT LBRC &hml LSHFT LT &kp COLON     &kp SEMI      &hmr RSHFT GT &hmr RALT RBRC &hmr RGUI RPAR &hmr RCTRL RBKT
+     &hml LCTRL COLON &hml LGUI LBKT &hml LALT LPAR &hml LSHIFT LBRC &kp LT    &kp GT        &hmr RSHFT RBRC &hmr RALT RPAR &hmr RGUI RBKT &hmr RCTRL SEMI
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp QMARK     &kp DQT       &kp PIPE      &kp PLUS     &kp UNDER         &kp MINUS     &kp EQUAL     &kp BSLH      &kp SQT        &kp SLASH
+     &kp TILDE     &kp DQT       &kp SQT       &kp PLUS      &kp MINUS         &kp UNDER      &kp EQUAL     &kp PIPE     &kp BSLH       &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                  &mt LGUI ESC  &mt LCTRL RET &trans            &trans        &mt RSHFT TAB &mt RALT DEL
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
@@ -179,7 +176,7 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
        &bootloader   &sys_reset    &trans        &trans        &trans            &trans        &trans        &trans        &sys_reset    &bootloader
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       &trans        &trans        &trans        &kp K_LOCK    &trans            &trans        &trans        &kp K_LOCK    &trans        &trans    
+       &trans        &trans        &kp K_LOCK    &trans        &trans            &trans        &trans        &kp K_LOCK    &trans        &trans    
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        &studio_unlock&trans        &trans        &trans        &trans            &trans        &trans        &trans        &trans        &studio_unlock
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
